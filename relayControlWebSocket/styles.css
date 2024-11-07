@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  transition: background 0.5s;
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+  letter-spacing: 1px;
+}
+
+button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+p {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+span {
+  font-weight: bold;
+}
+
+#connectionStatus {
+  color: #00ff00;
+  font-weight: bold;
+}
+
+#relayState {
+  color: #ff4500;
+  font-weight: bold;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: scale(1.02);
+}
+
+@media (max-width: 600px) {
+  h1 {
+      font-size: 2.5rem;
+  }
+
+  button {
+      padding: 12px 20px;
+      font-size: 1rem;
+  }
+
+  p {
+      font-size: 1.2rem;
+  }
+}
