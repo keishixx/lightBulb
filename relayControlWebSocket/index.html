@@ -8,8 +8,16 @@
   </head>
   <body>
     <h1>ESP32 Relay Control</h1>
-    <button onclick="sendMessage('ON')">Turn Relay ON</button>
-    <button onclick="sendMessage('OFF')">Turn Relay OFF</button>
+
+    <button onclick="sendMessage('ON1')">Turn Relay 1 ON</button>
+    <button onclick="sendMessage('OFF1')">Turn Relay 1 OFF</button>
+
+    <button onclick="sendMessage('ON2')">Turn Relay 2 ON</button>
+    <button onclick="sendMessage('OFF2')">Turn Relay 2 OFF</button>
+
+    <button onclick="sendMessage('ON3')">Turn Relay 3 ON</button>
+    <button onclick="sendMessage('OFF3')">Turn Relay 3 OFF</button>
+
     <p>Relay State: <span id="relayState">UNKNOWN</span></p>
     <p>Status: <span id="connectionStatus">Connecting...</span></p>
 
